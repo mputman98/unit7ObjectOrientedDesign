@@ -8,8 +8,7 @@ import java.awt.Rectangle;
  */
 public class BetterRectangle extends Rectangle
 {
-    /** description of instance variable x (add comment for each instance variable) */
-    
+   
 
     /**
      * Default constructor for objects of class BetterRectangle
@@ -34,11 +33,12 @@ public class BetterRectangle extends Rectangle
     public double getPerimetre()
     {
         double per = 0;
-        per = (this .getHeight * 2) + (this.getWidth * 2);
+        per = (super.getHeight * 2) + (super.getWidth * 2);
         return per;
         
     }
-    
+    
+
     /**
      * An example of a method - replace this comment with your own
      *  that describes the operation of the method
@@ -54,7 +54,7 @@ public class BetterRectangle extends Rectangle
     {
         // put your code here
         double area = 0;
-        area = this.getHeight * this.getWidth;
+        area = super.getHeight * super.getWidth;
         return area;
         
     }
